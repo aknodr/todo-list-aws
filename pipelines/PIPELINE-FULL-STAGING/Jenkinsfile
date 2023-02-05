@@ -27,11 +27,10 @@ pipeline {
                 }
             }
         }
-        exclude_lines =
        stage('Build') { 
             steps{
-                echo 'Package sam application:'
-                sh "bash pipelines/common-steps/build.sh"
+                echo 'Package sam application:' # pragma: no cover
+                sh "bash pipelines/common-steps/build.sh" # pragma: no cover
             }
         }
         stage('Deploy'){
