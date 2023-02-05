@@ -27,7 +27,8 @@ pipeline {
                 }
             }
         }
-       stage('Build') { # pragma: no cover
+        exclude_lines =
+       stage('Build') { 
             steps{
                 echo 'Package sam application:'
                 sh "bash pipelines/common-steps/build.sh"
