@@ -30,7 +30,7 @@ pipeline {
        stage('Build') { 
             steps{
                 echo 'Package sam application:'
-                sh "bash pipelines/common-steps/build.sh" # pragma: no cover
+                sh "bash pipelines/common-steps/build.sh"
             }
         }
         stage('Deploy'){
